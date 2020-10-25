@@ -6,30 +6,34 @@
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/3de38c8e18.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="javascript" href="javascript/index.js">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<!--     <link rel="javascript" href="index.js"> -->
   </head>
   <body>
     <div class="progress-bar">
-      <div class="tab tab-about">
+      <div class="tab tab-about animate__animated animate__fadeInLeft">
         > About me
       </div>
-      <div class="tab tab-portfolio">
+      <div class="tab tab-portfolio animate__animated animate__fadeInLeft">
         > Portfolio
       </div>
-      <div class="tab tab-contact">
+      <div class="tab tab-contact animate__animated animate__fadeInLeft">
         > Contact me
       </div>
     </div>
     <div class="container">
       <div class="banner">
-        <img src="images/profile.png" alt="Profile picture" id="profile-pic">
+        <img src="images/profile.png" alt="Profile picture" id="profile-pic" class="animate__animated animate__fadeIn">
         <div class="banner-content">
-          <h1>> Thibaud Maurel</h1>
-          <h2>> I'm a <strong class="blue">Fullstack Web Developer</strong></h2>
-          <h2>> I build web applications</h2>
-          <h2>> I'm a teacher @ <a href="https://www.lewagon.com/Paris">Le Wagon Paris</a></h2>
+          <h1 class="page-title">> Thibaud Maurel</h1>
+          <h2 class="first-line"></h2>
+          <h2 class="second-line"></h2>
+          <h2 class="third-line"></h2>
           <div class="banner-cta">
-            <a href="#" id="contact-link">> Get in touch</a>
+            <a href="#" class="link" id="contact-link">> Get in touch</a>
           </div>
         </div>
       </div>
@@ -128,6 +132,6 @@
         <div class="typeform-widget" data-url="https://form.typeform.com/to/kHBrXNia" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=kHBrXNia&utm_source=typeform.com-01EASVKSWK05ZBG8Q0E2G9XDZ0-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
       </div>
     </div>
-    <script language="JavaScript" type="text/javascript" src="javascript/index.js"></script>
+    <script language="JavaScript" type="module" src="index.js"></script>
   </body>
 </html>

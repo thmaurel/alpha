@@ -3,6 +3,7 @@
   left: 0px;
   bottom: 30px;
   font-size: 24px;
+  height: 300px;
 }
 
 .tab {
@@ -13,4 +14,10 @@
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   cursor: pointer;
+  width: 180px;
 }
+
+.tab-portfolio, .tab-contact {
+  display: none;
+}
+
