@@ -15,9 +15,6 @@
   border-bottom-right-radius: 25px;
   cursor: pointer;
   width: 180px;
-}
-
-.tab-portfolio, .tab-contact {
   display: none;
 }
 

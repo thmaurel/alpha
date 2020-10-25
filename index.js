@@ -16,28 +16,39 @@ tabs();
 //   document.querySelector('.tab-contact').style.display = "block";
 // }, 4000);
 
-const speed = 50;
+const speed = 30;
 
 const firstLine = document.querySelector('.first-line');
 const secondLine = document.querySelector('.second-line');
 const thirdLine = document.querySelector('.third-line');
+const contactLink = document.getElementById('contact-link');
 
 let j = 0;
 let txt2 = "> I'm a Fullstack Web Developer";
+let j2 = 0;
 
 let k = 0;
 let txt3 = "> I build web applications";
 
 let l = 0;
-let txt4 = "> I'm a teacher @ ";
+let txt4 = "> I'm a teacher @ Le Wagon Paris";
 
 let m = 0;
-let txt5 = "Le Wagon Paris";
+
+let n = 0;
+let txt5 = "Get in touch";
+
+let about_todo = true;
+let portfolio_todo = true;
 
 const typeWriter = () => {
     if (j < txt2.length) {
     firstLine.innerHTML += txt2.charAt(j);
     j++;
+    setTimeout(typeWriter, speed);
+  } else if (j2 === 0) {
+    firstLine.innerHTML = "> I'm a <strong class=\"blue\">Fullstack Web Developer</strong>";
+    j2++;
     setTimeout(typeWriter, speed);
   } else if (k < txt3.length) {
     secondLine.innerHTML += txt3.charAt(k);
@@ -48,9 +59,23 @@ const typeWriter = () => {
     l++;
     setTimeout(typeWriter, speed);
   } else if (m === 0) {
-    thirdLine.innerHTML += "<a href=\"https://www.lewagon.com/Paris\">Le Wagon Paris</a>"
+    thirdLine.innerHTML = "> I'm a teacher @ <a href=\"https://www.lewagon.com/Paris\">Le Wagon Paris</a>";
     m++;
     setTimeout(typeWriter, speed);
+  } else if (n < txt5.length) {
+    contactLink.innerHTML += txt5.charAt(n);
+    n++;
+    setTimeout(typeWriter, speed);
+  } else if (about_todo) {
+    document.querySelector('.tab-about').style.display = "block";
+    about_todo = false;
+    setTimeout(typeWriter, 1000)
+  } else if (portfolio_todo) {
+    document.querySelector('.tab-portfolio').style.display = "block";
+    portfolio_todo = false;
+    setTimeout(typeWriter, 1000)
+  } else {
+    document.querySelector('.tab-contact').style.display = "block";
   }
 }
 
