@@ -7,12 +7,12 @@
 }
 
 .portfolio-img {
-  width: 700px;
+  width: 55%;
   object-fit: cover;
 }
 
 .portfolio-desc {
-  width: 500px;
+  width: 45%;
 }
 
 .portfolio-desc p {

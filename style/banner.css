@@ -48,5 +48,5 @@
   border: 1px solid #67AAF9;
   padding: 10px 20px;
   border-radius: 5px;
-  text-decoration: none;
+  cursor: pointer;
 }
